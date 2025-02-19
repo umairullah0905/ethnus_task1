@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        margin: 0;
+      }
+
+      .main-container {
+        position: relative;
+        width: 200px;
+        height: 250px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 10px;
+        border: 1px solid black;
+      }
+
+      .small-div {
+        width: 100px;
+        height: 40px;
+        position: absolute;
+        left: -50px;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .div1 {
+        background-color: red;
+        top: 10px;
+      }
+      .div2 {
+        background-color: blue;
+        top: 60px;
+      }
+      .div3 {
+        background-color: green;
+        top: 110px;
+      }
+      .div4 {
+        background-color: orange;
+        top: 160px;
+      }
+
+      .small-div:hover {
+        transform: translateX(50px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="small-div div1"></div>
+      <div class="small-div div2"></div>
+      <div class="small-div div3"></div>
+      <div class="small-div div4"></div>
+    </div>
+  </body>
+</html>

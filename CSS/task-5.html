@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            height: 100vh;
+        }
+
+        .main-content{
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(221, 221, 10);
+            border: 1px solid black;
+            height: 80vh;
+            width: 100vh;
+        }
+
+        .nav-div{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 35%;
+        }
+        
+        .content-div{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 65%;
+        }
+
+        h2,p,h5{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: brown;
+        }
+
+        hr{
+            margin: 0;
+            width: 95%;
+            border: 1px solid black;
+        }
+
+        .nav-bar{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding-left: 9px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .nav-item{
+            background-color: black;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            height: 35px;
+            width: 23vh;
+            border: 1px solid black;
+            margin-top: 25px;
+        }
+
+        a{
+            height: 100%;
+            width: 90%;
+            background-color: white;
+        }
+
+        ul{
+            height: 50%;
+            width: 100%;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <div class="nav-div">
+
+            <nav class="nav-bar">
+                <ul>
+                    <li><div class="nav-item"><a href="#">Home Page</a></div></li>
+                    <li><div class="nav-item"><a href="#">Musings</a></div></li>
+                    <li><div class="nav-item"><a href="#">My Town</a></div></li>
+                    <li><div class="nav-item"><a href="#">Links</a></div></li>
+                </ul>
+                
+            </nav>
+
+
+        </div>
+
+        <div class="content-div">
+
+            <h2>My first styled page</h2>
+
+            <p>Welcome to my styled page!!</p>
+
+            <p>It lacks images,but atleast it has styles. And it have links even if they dont go anywhere.</p>
+
+            <p>There should be more here, but i don't know what yet.</p>
+
+            <hr>
+            
+            <h5>Made 19th Feb 2025</h5>
+            <h5> by myself </h5>
+            
+
+        </div>
+    </div>
+</body>
+</html>
